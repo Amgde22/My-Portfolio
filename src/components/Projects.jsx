@@ -1,11 +1,11 @@
 import { createStyles } from "@mantine/core";
-import useStyles from "../mantineStyles";
+import useStyles from "@/mantineStyles";
 import Header from "./teenyComponents/Header";
 import { Carousel } from '@mantine/carousel';
 
-import p1f1 from "../assets/project1/f1.png";import p2f1 from "../assets/project2/f1.png";import p3f1 from "../assets/project3/f1.png";import p4f1 from"../assets/project4/f1.png"
-import p1f2 from "../assets/project1/f2.png";import p2f2 from "../assets/project2/f2.png";import p3f2 from "../assets/project3/f2.png";import p4f2 from"../assets/project4/f2.png"
-import p1f3 from "../assets/project1/f3.png";import p2f3 from "../assets/project2/f3.png";import p3f3 from "../assets/project3/f3.png";import p4f3 from"../assets/project4/f3.png"
+import p1f1 from "assets/project1/f1.png";import p2f1 from "assets/project2/f1.png";import p3f1 from "assets/project3/f1.png";import p4f1 from"assets/project4/f1.png"
+import p1f2 from "assets/project1/f2.png";import p2f2 from "assets/project2/f2.png";import p3f2 from "assets/project3/f2.png";import p4f2 from"assets/project4/f2.png"
+import p1f3 from "assets/project1/f3.png";import p2f3 from "assets/project2/f3.png";import p3f3 from "assets/project3/f3.png";import p4f3 from"assets/project4/f3.png"
 
 import Project from "./teenyComponents/Project";
 import { t } from "i18next";
