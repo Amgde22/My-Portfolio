@@ -1,0 +1,15 @@
+#app-test{
+  padding-top: 100vh;
+  height: 250vh;
+  /* display: flex;flex-direction: column; justify-content: space-between; */
+  background-color: rgb(131, 74, 131) !important;
+}
+
+#app-test > div{
+
+  font-size: 2em;
+}
+
+.invisible{
+  display: none;
+}

@@ -1,0 +1,100 @@
+:root{
+  --fade-in-animation-duration:250ms;
+  --fade-in-animation-delay:50ms;
+
+}
+
+.fade-in-on-load{
+  opacity: 0;
+  animation-name:fade-in-above;
+  animation-duration: var(--fade-in-animation-duration);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: var(--fade-in-animation-delay);
+}
+
+.fade-in-on-load:nth-of-type(2){
+ animation-duration: calc(var(--fade-in-animation-duration) * 2);
+}
+.fade-in-on-load:nth-of-type(3){
+  animation-duration: calc(var(--fade-in-animation-duration) * 3);
+}
+
+.fade-in-on-load-hero{
+  opacity: 0;
+
+  animation-name:fade-in-above;
+  animation-duration: var(--fade-in-animation-duration);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: var(--fade-in-animation-delay);
+
+
+  animation-delay: calc(var(--fade-in-animation-duration) * 3);
+  animation-timing-function: ease-out;
+
+}
+.fade-in-on-load-hero:nth-of-type(1){
+  animation-duration: calc(var(--fade-in-animation-duration) * 4);
+}
+.fade-in-on-load-hero:nth-of-type(2){
+  animation-duration: calc(var(--fade-in-animation-duration) * 2);
+}
+.fade-in-on-load-hero:nth-of-type(3){
+  animation-duration: calc(var(--fade-in-animation-duration) * 2);
+}
+@keyframes fade-in-above {
+  from{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+}
+
+
+/*  fade is side */
+.invisible{
+  opacity: 0;
+}
+.fade-in-side{
+  opacity: 0;
+  animation-name:fade-in-left;
+  animation-duration: var(--fade-in-animation-duration);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-side:nth-last-of-type(1){
+  animation-delay:calc(var(--fade-in-animation-duration) ) ;
+}
+.fade-in-side:nth-last-of-type(2){
+  animation-delay:calc(var(--fade-in-animation-duration) * 2 ) ;
+}
+.fade-in-side:nth-child(3){
+  animation-delay:calc(var(--fade-in-animation-duration) * 3) ;
+}
+@keyframes fade-in-left {
+  from{
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+}
+
+/* fade in top */
+.fade-in-above{
+  opacity: 0;
+  animation-name:fade-in-above;
+  animation-duration: 250ms;
+  animation-delay: calc(var(--fade-in-animation-duration) * 4);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
