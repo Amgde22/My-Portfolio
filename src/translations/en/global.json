@@ -65,6 +65,10 @@
       "pwa":"Pregressive Web App",
       "localStorage":"Local Storage",
 
+      "redesign":"Redesign",
+      "layout":"optimized layout",
+      "BugFixes":"Bug Fixes",
+      
       "weather":"Weather",
       "api":"Api",
 
@@ -105,6 +109,10 @@
         "b":"place them on the field to defend your tower",
         "c":"many unique spells and enemies"
 
+    },
+    "project5":{
+      "title":"(Redesign) Algeria Telecom",
+      "desc":"I Tried To Rebuild The Algeria Telecom Website from the ground up , implementing new features and fixing bugs to improve customer"
     }
   },
   "skills":{

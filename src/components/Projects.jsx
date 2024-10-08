@@ -6,6 +6,8 @@ import { Carousel } from '@mantine/carousel';
 import p1f1 from "assets/project1/f1.png";import p2f1 from "assets/project2/f1.png";import p3f1 from "assets/project3/f1.png";import p4f1 from"assets/project4/f1.png"
 import p1f2 from "assets/project1/f2.png";import p2f2 from "assets/project2/f2.png";import p3f2 from "assets/project3/f2.png";import p4f2 from"assets/project4/f2.png"
 import p1f3 from "assets/project1/f3.png";import p2f3 from "assets/project2/f3.png";import p3f3 from "assets/project3/f3.png";import p4f3 from"assets/project4/f3.png"
+import patf1 from "assets/project-at/lanpage-old.png";import patf2 from "assets/project-at/landpage-new.png";import patf3 from "assets/project-at/navigation-old.png";import patf4 from"assets/project-at/navigation-new.png";import patf5 from"assets/project-at/products-old.png";import patf6 from"assets/project-at/products-new.png";import patf7 from"assets/project-at/products-new-phone.png";
+
 
 import Project from "./teenyComponents/Project";
 import { t } from "i18next";
@@ -51,6 +53,9 @@ function Projects(props) {
   const p4df2 = t("projects.project4.b")
   const p4df3 = t("projects.project4.c")
 
+  const patTitle = t("projects.project5.title")
+  const patDesc = t("projects.project5.desc")
+
   const arabic =t("projects.tags.arabic")
   const english =t("projects.tags.english")
 
@@ -64,8 +69,10 @@ function Projects(props) {
   const localSrorage =t("projects.tags.localStorage")
   const weather =t("projects.tags.weather")
   const api =t("projects.tags.api")
-  const houses =t("projects.tags.houses")
-  const files =t("projects.tags.files")
+
+  const redesign =t("projects.tags.redesign")
+  const layout =t("projects.tags.layout")
+  const BugFixes =t("projects.tags.BugFixes")
 
 
 
@@ -113,9 +120,36 @@ function Projects(props) {
 
     }
     />
+
+{/* Algerie Telecom Redesign */}
+<Project reaDirection={reaDirection} 
+  title={patTitle} 
+  desc={patDesc} 
+  href="https://new-at.pages.dev/"
+      position={"left"}
+      tags={[
+        <Tag twBg={"bg-amber-100"} twText={"text-amber-600"} twBorder={"border-amber-600"} >{english}</Tag>,
+        <Tag twBg={"bg-green-100"} twText={"text-green-700"} twBorder={"border-green-700"} >{vue}</Tag>,
+        <Tag twBg={"bg-violet-100"} twText={"text-violet-600"} twBorder={"border-violet-600"} >{redesign}</Tag>,
+        <Tag twBg={"bg-orange-100"} twText={"text-orange-600"} twBorder={"border-orange-600"} >{layout}</Tag>,
+        <Tag twBg={"bg-red-100"} twText={"text-red-600"} twBorder={"border-red-600"} >{BugFixes}</Tag>,
+      ]}
+      picdesc={[
+        [patf1,""],
+        [patf2,""],
+
+        [patf4,""],
+        [patf5,""],
+        [patf6,""],
+
+      ]
+
+    }
+    />
+
 {/* weather timee */}
 <Project reaDirection={reaDirection} title={p2Title} desc={p2Desc} href="https://amgde22.github.io/weathernow/"
-      position={"left"}
+      position={"right"}
       tags={[
         <Tag twBg={"bg-amber-100"} twText={"text-amber-600"} twBorder={"border-amber-600"} >{english}</Tag>,
         <Tag twBg={"bg-blue-200"} twText={"text-blue-700"} twBorder={"border-blue-700"} >{weather}</Tag>,
@@ -128,6 +162,7 @@ function Projects(props) {
         [p2f3 , p2df3],
       ]}
     />
+
 {/* rent a house */}
 {/* <Project reaDirection={reaDirection} title={p3Title} desc={p3Desc} href="https://mohamedshop-9fcb8.web.app/"
       position={"right"}

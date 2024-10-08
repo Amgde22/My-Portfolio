@@ -177,6 +177,9 @@ label{
   min-height: 2em;
   background-image: linear-gradient(to bottom , transparent , rgb(34, 34, 34) 45%);
 }
+.project-slide-desc:empty{
+  display: none;
+}
 /* skills */
 .skills-carousel .mantine-Carousel-control{
   background-color:transparent;

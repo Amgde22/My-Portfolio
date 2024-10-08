@@ -25,7 +25,7 @@ function Socials({ openEmailForm , displayHeading=true }) {
       </a>
     {/* Email */}
       <a
-        href={openEmailForm ? null : "mailto:myEmail@gmail.com"}
+        href={openEmailForm ? null : "mailto:magidembarek@gmail.com"}
         target={openEmailForm ? null : "_blank"}
         className="opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
         onClick={openEmailForm ? openEmailForm : null}
